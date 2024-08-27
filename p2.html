@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>Heading Tags</title>
+        <style>
+            h1{
+                background-color: rgb(128, 0, 128); 
+                padding: 50px; /* this is the inside space */
+                color: aliceblue; /*for words */
+                margin: 50px;
+                border: 7px solid black ;
+                border-radius: 100px;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            h2{
+                border: 500px; 
+                box-shadow: inset;
+                padding: 100px;
+                background-color: pink;
+                border-top-left-radius: 50px;
+                bottom: 70px;
+                font-weight: 20;
+                inline-size: 50%;
+                margin: 50px;
+                border: 7px dotted rgba(0, 0, 0, 0.906) ;
+
+            }
+            h3{
+                text-align: right;
+                padding: 30px;
+                color: rebeccapurple;
+                background-color: cadetblue;
+                font-variant: small-caps;
+            }
+            h4{
+                border: 7px solid black ;
+                border-color: brown;
+                padding: 20px;
+                border-style: groove;
+                cursor: cell;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <center>
+             example for heading tag
+        </center>
+        <hr>
+        <h1>This is the first heading tag and big heading tags</h1>
+        <hr>
+        <h2>This is the 2nd heading tag </h2>
+        <hr>
+        <h3>This is the 3rd heading tag </h3>
+        <hr>
+        <h4>This is the 4th heading tag </h4>
+        <hr>
+        <h5>This is the 5th heading tag </h5>
+        <hr>
+        <h6>This is the 6th heading tag </h6>
+        <p><abbr title="this is the paragraph tag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus itaque inventore illo architecto nulla rem, quasi voluptatum culpa doloremque officiis sunt tenetur! Accusamus quas dolor deleniti aut debitis dolores corrupti!</abbr></p>
+
+        <hr>
+        <mark>This is marking tag</mark>
+
+        <hr>
+        <p>
+            <blockquote style="background-color: rgb(243, 255, 240); color: rgb(255, 0, 0); padding: 50px; font-family: 'Courier New', Courier, monospace;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta nostrum labore repudiandae. Nisi, quia magni harum earum aliquid dolores saepe veritatis consequatur quo optio, numquam sapiente nobis quidem nulla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est debitis aperiam deleniti possimus molestiae aliquam quasi ex tenetur, porro natus, iste rerum blanditiis saepe neque quos ipsa, voluptatibus cupiditate nisi.</blockquote>
+        </p>
+
+        <hr>
+        <hr>
+        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores rem maiores voluptatum non itaque consectetur, aliquam corporis pariatur explicabo, ex aspernatur id doloribus, eveniet molestias sunt molestiae excepturi soluta?</q>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <q><b><u> odit animi aperiam rerum? Aspernatur, sequi iusto delectus eius doloremque labore accusantium rem voluptatem, inventore ut consequuntur soluta quis! Velit, sit!</u></b></q></p>
+
+        <hr><hr>
+
+        <sup>this is the superscript tag it is used to display a text above the normal</sup>
+        <p><b>(a+b)2=a2+b2+2ab</b></p>
+        <p><b>(a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab</b></p>
+
+        <sub>this is the superscript tag it is used to display a text below the normal line</sub>
+        <p><b>(a+b)<sub>2</sub>=a<sub>2</sub>+b<sub>2</sub>+2ab</b></p>
+        <h1><p><b>H<sub>2</sub>O</b></p></h1>
+
+        <br><hr><hr>
+
+        <pre>It is used for display the paragraph as it is given by the user</pre>
+        <pre>
+                        The is the 1<sup>st</sup> Line 
+                                this is the 2<sup>nd</sup> line 
+             This is the 3r<sup>rd</sup> line code 
+        </pre>
+             <hr>
+             <br>
+             <hr>
+
+
+        <code>This is used to display the code in the website</code>
+        <code>
+            <pre style="background-color: rgb(43, 226, 43);color: brown; padding: 100px; border-radius: 100px;">
+                    package myfirstjava;
+                    import java.lang.String;
+                    public class A2 {
+                        int empid;
+                        A2()
+                        {
+                            
+                        }
+                        A2(int empid)
+                        {
+                            this.empid = empid;
+                        }
+                        public String toString()
+                        {
+                            return "empid" + empid;
+                        }
+                        public boolean equals(Object obj)
+                        {
+                            //A2 other = (A2) obj;
+                            return this.empid == ((A2)obj).empid;
+                        }
+
+                        public static void main(String[] args) {
+                            // TODO Auto-generated method stub
+                            A2 obj1= new A2(10);
+                            A2 obj2= new A2(20);
+                            System.out.println(obj1.equals(obj2));
+
+                        }
+
+                }
+
+            </pre>
+        </code>
+        <kbd>this is keyboard tag it is used to display the keyboard style</kbd>
+        <hr>
+        <br>
+        <p>CTRL + A</p>
+        <hr>
+        <kbd>CTRL + A</kbd>
+        <hr>
+        <hr>
+        <h5 style="background-color: black;color: white;padding: 10px;border-radius: 5px; width: fit-content;"><kbd>CTRL + A</kbd></h5>
+        <hr><hr>
+        <strike>used to strike the line like del tag like that</strike>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit quo aliquid aspernatur eum? Id doloremque quo et,<strike>accusamus</strike> atque odio asperiores, earum optio assumenda accusantium eos fugit officiis provident.</p>
+
+        <del> is same as the strike tag only</del>
+        <address>Address: Arabagatte(P)(V), Honnali(T), Davanagere(D)  577217</address>)
+    </body>
+</html>
