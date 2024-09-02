@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Registration Fom</title>
+        <style>
+            *{
+                margin: 0;
+                border: 0;
+                box-sizing: border-box;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            section{
+                height: 100vh;
+                background-color: greenyellow;
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            section form{
+                background-color: #fff;
+                width: 330px;
+                padding: 30px;
+                box-shadow: 15px 15px 0px black;
+                border: 3px solid black;
+                border-radius: 10px;
+                
+            }
+            input{
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                border: 1px solid black;
+            }
+            button{
+                width: 100%;
+                border: none;
+                padding: 10px;
+                background-color: aqua;
+                color: #fff;
+                border-radius: 10px;
+
+            }
+            button:hover{
+                background-color: aquamarine;
+                cursor: pointer;
+                transition: 0.5ms;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <form>
+                <h3>Welcome back</h3>
+                <br>
+
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email id" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+            <small>Create New Account <a href="./p18.html">Create Account</a></small>
+            <button type="submit">Create Account</button>
+            </form>
+        </section>
+    </body>
+</html>
