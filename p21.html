@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mortgage Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e7f0fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 70%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+        }
+
+        .calculator {
+            display: flex;
+            width: 100%;
+        }
+
+        .left-panel, .right-panel {
+            padding: 20px;
+        }
+
+        .left-panel {
+            width: 60%;
+            border-right: 2px solid #ddd;
+        }
+
+        .right-panel {
+            width: 40%;
+            background-color: #1e2c39;
+            color: #ffffff;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .label, p {
+            color: #ffffff;
+            margin: 15px 0;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .term-rate {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .term-rate div {
+            width: 48%;
+        }
+
+        .radio-group {
+            margin-top: 20px;
+        }
+
+        .radio-group label {
+            margin-right: 20px;
+            color: #333;
+        }
+
+        button.calculate-button {
+            margin-top: 20px;
+            background-color: #ffe600;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button.calculate-button:hover {
+            background-color: #ffcc00;
+        }
+
+        .right-panel h1 {
+            color: #ffe600;
+            font-size: 2.5rem;
+        }
+
+        .right-panel p, .right-panel h2 {
+            color: #ffffff;
+            margin: 15px 0;
+        }
+        .box1{
+            width: 350px;
+            height: 25px;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="left-panel">
+                <h1>Mortgage Calculator</h1>
+                <label for="mortgage-amount">Mortgage Amount</label>
+                <input type="text" id="mortgage-amount" placeholder="£ 300,000">
+                
+                <div class="term-rate">
+                    <div>
+                        <label for="mortgage-term">Mortgage Term</label>
+                        <input type="text" id="mortgage-term" placeholder="25 years">
+                    </div>
+                    <div>
+                        <label for="interest-rate">Interest Rate</label>
+                        <input type="text" id="interest-rate" placeholder="5.25%">
+                    </div>
+                </div>
+                <br>
+                <label>Mortgage Type</label>
+                <div class="radio-group">
+                    <div class="box1">
+                        <label><input type="radio" name="mortgage-type" checked> Repayment</label><br><br>
+                    </div>
+                    <div class="box1">
+                        <label><input type="radio" name="mortgage-type" checked> Interest Only</label>
+                    </div>
+                </div>
+                
+                <button class="calculate-button">Calculate Repayments</button>
+            </div>
+            
+            <div class="right-panel" style="border-radius: 20px;">
+                <h2>Your Results</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni assumenda expedita vitae eum, quas aut fugiat delectus ipsum iure eos, illo molestiae voluptatibus atque tenetur, incidunt minima adipisci maxime.</p>
+                <hr style="border-bottom: #f1c308 solid 8px;">
+                <p>Your monthly repayments</p>
+                <h1>£1,797.74</h1>
+                <hr>
+                <p>Total you'll repay over the term</p>
+                <h2>£539,322.94</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

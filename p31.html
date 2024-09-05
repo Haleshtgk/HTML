@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Moving Animation</title>
+        <style>
+            *{
+                margin: 0;
+                padding: o;
+                box-sizing: border-box;
+            }
+            .container{
+                min-height: 100vh;
+                background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container .img1{
+                background-color: white;
+                width: 200px;
+                position: absolute;
+                top: 0;
+                transform: translateX(-150px);
+                animation: moonAnimation 10s infinite alternate;
+            }
+            .container .img2{
+                background-color: white;
+                width: 200px;
+                position: absolute;
+                bottom: 0;
+                transform: translateX(-150px);
+                animation: moonAnimation 10s infinite alternate;
+            }
+            @keyframes moonAnimation{
+                0%{
+                    transform: translateX(-190px);
+                }
+                50%{
+                    transform: translateX(0px);
+                }
+                100%{
+                    transform: translateX(-190px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <img src="https://4.bp.blogspot.com/-sZeS9DiL1q8/WJ6nOLaP-OI/AAAAAAAA3wA/LRmtZFtF1K8jxyX1X2CIoV-bHZvAcf_5ACLcB/s1600/Cloudy%2BFull%2BMoon.gif" alt="" class="img1">
+            <img src="https://i.pinimg.com/originals/8e/1c/9f/8e1c9f5c4a8d2946a1bb21feb4296b69.gif" alt="" class="img2">
+        </section>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layered Cake Slice</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(254, 205, 185);
+        }
+        .cake-slice {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(255, 224, 189); /* Cake base color */
+            position: relative;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .layer {
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            background-color: rgb(255, 102, 102); /* Pink layer */
+        }
+        .layer:nth-child(2) {
+            background-color: rgb(255, 178, 102); /* Orange layer */
+            top: 50px;
+        }
+        .layer:nth-child(3) {
+            background-color: rgb(144, 238, 144); /* Green layer */
+            top: 100px;
+        }
+        .layer:nth-child(4) {
+            background-color: rgb(238, 130, 238); /* Violet layer */
+            top: 150px;
+        }
+        .icing {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            height: 20px;
+            background-color: rgb(255, 255, 255); /* Icing color */
+            border-radius: 10px;
+        }
+        .cherry {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 0, 0); /* Cherry color */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cake-slice">
+        <div class="icing"></div>
+        <div class="cherry"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+</body>
+</html>

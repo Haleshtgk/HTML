@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>MOON</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            section{
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                border: 10px solid rebeccapurple;
+            }
+            .moon{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: #fcfeda;
+                background: url(https://starlust.org/what-color-is-the-moon/) no-repeat center;
+                /* background-color:; */
+                /* background-size: cover; */
+                color: aqua;
+                position: absolute;
+                transform: translateX(-190%);
+
+                animation: movingAnimation 10s linear infinite;
+            }
+            .sun{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: black;
+                z-index: 10;
+            }
+
+            @keyframes movingAnimation{
+            0%{
+                transform: translateX(-190%);
+            }
+            50%{
+                transform: translateX(0%);
+                box-shadow: 0px 0px 10px rosybrown;
+            }
+            80%{
+                transform: translateX(0%);
+                box-shadow: 0px 0px 10px rosybrown;
+            }
+            100%{
+                transform: translateX(190%);
+                box-shadow: none;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class="moon">
+
+            </div>
+            <div class="sun">
+
+            </div>
+        </section>
+    </body>
+</html>
